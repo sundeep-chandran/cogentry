@@ -1,0 +1,3 @@
+http://www.codeproject.com/Articles/37727/Prepare-a-JSON-Web-Service-and-access-it-with-JQue
+
+http://codeasp.net/blogs/teisenhauer/microsoft-net/1050/jquery-mobile-registration-signup-dialog

@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<title>DockMaster Mobile: Prototype</title>
+
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css" />
+    <link rel="stylesheet" href="css/dm.css" />
+
+    <script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
+	<script type="text/javascript" src="js/DB2Web.js"></script>
+        
+</head>
+
+<body> 
+
+<!-- Home Page -->
+
+<div data-role="page" id="dm-home" class="type-home" >
+
+	<div data-role="header" data-theme="a" data-nobackbtn="true">
+		<h1>Enterprise Productivity Tool</h1>
+    </div><!-- /header -->
+
+
+
+
+   <div data-role="content">
+
+        <div class="content-primary">
+
+            <div id="dm-homeheader">
+                <p id="dm-version">Beta Release</p>
+            </div>
+
+            <!--
+			<div data-role="controlgroup">
+                <ul data-role="listview" data-inset="true" data-theme="c" data-dividertheme="f">
+                   <li data-role="list-divider">Enterprise Productivity Tool</li> 
+                    <li><a href="http://jquerymobile.com/demos/1.1.1/">Guide</a></li> 
+				<!--    <li><a href="mobilepos.html">Mobile POS</a></li> 
+                </ul>
+            </div> -->
+			
+			
+
+            <!--
+			<div data-role="controlgroup" data-theme="c" data-dividertheme="f">
+    	            <a href="changeprofile.html" rel="external" data-role="button" data-icon="arrow-r" data-iconpos="right">Edit Profile</a>
+			</div> <!-- Edit Profile 
+			
+			<div data-role="collapsible" data-collapsed="true" data-theme="b">
+		        <h3> Edit Profile</h3>
+		        <div data-role="controlgroup" data-theme="c" data-dividertheme="f">
+    	            <a href="list-customers.html" rel="external" data-role="button" data-icon="arrow-r" data-iconpos="right">List Customers</a>
+		            <a href="get-customer.html" rel="external" data-role="button" data-icon="arrow-r" data-iconpos="right">Get Customer Info</a>
+		            <a href="add-customer.html" rel="external" data-role="button" data-icon="arrow-r" data-iconpos="right">Add a Customer</a>
+		            <a href="home.html" rel="external" data-role="button" data-icon="arrow-r" data-iconpos="right">Get Boat Info</a>
+		            <a href="home.html" rel="external" data-role="button" data-icon="arrow-r" data-iconpos="right">Add a Boat</a>
+		        </div>
+	        </div><!-- /Customers and Boats -->
+			
+			<!-- <label for="account" class="select"><strong>Choose account:</strong></label> 
+		    <select name="account" id="account" data-native-menu="false">
+		        <option value="exuma1">Project1</option>
+		        <option value="exuma2">Project2</option>
+		        <option value="exuma3">Project3</option>
+		    </select> -->
+			
+			<div data-role="collapsible" data-collapsed="true" data-theme="b">
+		        <h3>Projects</h3>
+		        <div data-role="controlgroup" data-theme="c" data-dividertheme="f">
+    	            <a href="list-customers.html" rel="external" data-role="button" data-icon="arrow-r" data-iconpos="right">Create New Project</a>
+		            <a href="get-customer.html" rel="external" data-role="button" data-icon="arrow-r" data-iconpos="right">View Existing Projects</a>
+					 <a href="add-customer.html" rel="external" data-role="button" data-icon="arrow-r" data-iconpos="right">Edit Existing Project</a>
+		            <a href="add-customer.html" rel="external" data-role="button" data-icon="arrow-r" data-iconpos="right">Delete Existing Project</a>
+		        </div>
+	        </div><!-- Projects -->
+			
+			<div data-role="collapsible" data-collapsed="true" data-theme="b">
+		        <h3>Tasks</h3>
+		        <div data-role="controlgroup" data-theme="c" data-dividertheme="f">
+    	            <a href="list-customers.html" rel="external" data-role="button" data-icon="arrow-r" data-iconpos="right">Create Task</a>
+					<a href="list-customers.html" rel="external" data-role="button" data-icon="arrow-r" data-iconpos="right">View Task</a>
+		            <a href="add-customer.html" rel="external" data-role="button" data-icon="arrow-r" data-iconpos="right">Edit Task</a>
+		            <a href="home.html" rel="external" data-role="button" data-icon="arrow-r" data-iconpos="right">Delete Task</a>
+		            
+		        </div>
+	        </div><!-- Tasks -->
+			
+			<div data-role="collapsible" data-collapsed="true" data-theme="b">
+		        <h3>Users</h3>
+		        <div data-role="controlgroup" data-theme="c" data-dividertheme="f">
+    	            <a href="list-customers.html" rel="external" data-role="button" data-icon="arrow-r" data-iconpos="right">Create New User</a>
+		            <a href="add-customer.html" rel="external" data-role="button" data-icon="arrow-r" data-iconpos="right">Edit User</a>
+					<a href="add-customer.html" rel="external" data-role="button" data-icon="arrow-r" data-iconpos="right">Delete User</a>
+		        </div>
+	        </div><!-- Users-->
+
+            <div data-role="collapsible" data-collapsed="true" data-theme="b">
+                <h3>Time Sheets</h3>
+                <div data-role="controlgroup">
+                    <a href="parts-lookup.html" rel="external" data-role="button" data-icon="arrow-r" data-iconpos="right">Projects</a>
+                    <a href="init-stock-reorder.html" rel="external" data-role="button" data-icon="arrow-r" data-iconpos="right">Users</a>
+					<a href="init-stock-reorder.html" rel="external" data-role="button" data-icon="arrow-r" data-iconpos="right">Tasks</a>
+                </div>    
+            </div><!-- /Time Sheets -->
+
+            <div data-role="collapsible" data-collapsed="true" data-theme="b">
+                <h3>Expense Report<h3>
+                <div data-role="controlgroup">
+                    <a href="add-wo-parts.html" rel="external" data-role="button" data-icon="arrow-r" data-iconpos="right">Projects</a>
+                    <a href="timecard.html" rel="external" data-role="button" data-icon="arrow-r" data-iconpos="right">Users</a>
+					<a href="timecard.html" rel="external" data-role="button" data-icon="arrow-r" data-iconpos="right">Tasks</a>
+                </div>    
+            </div><!-- /Expense Report -->
+
+            
+        </div><!--/content-primary-->
+
+<!--    <div><!--/content-secondary-->
+<!--    </div><!--/content-secondary-->
+        
+    </div><!--/content-->
+
+    <div data-role="footer" class="footer-docs" data-theme="a">
+        <p><center> &copy; 2012 Dobango Inc.</p>
+    </div><!--footer-->
+    
+</div><!--page-->
+</body>
+</html>

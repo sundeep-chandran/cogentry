@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html> 
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>Enterprise Productivity  Mobile: Prototype</title>
+
+    <link rel="apple-touch-icon-precomposed" href="images/dockmaster.png" />
+    <link rel="apple-touch-startup-image" href="images/dm_startup.png" />
+<!--	<link rel="apple-touch-startup-image" href="rvm_startup.png" />	RVMaster Start-up Logo -->
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css" />
+    <link rel="stylesheet" href="css/dm.css" />
+
+    <script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
+   	<! -- <script type="text/javascript" src="js/exmobile.initCustomerDB.js"></script>  -->
+</head> 
+
+<body onload="initCustomerDB()">
+
+<!-- Login Page -->
+
+<div data-role="page" id="dm-login">
+
+    <div data-role="header" data-theme="a">
+	<a href="index.html" data-icon="home" data-iconpos="notext" data-direction="">Home</a>
+	<h1>Enterprise Productivity Tool</h1>
+	 <a href="register.html" data-icon="register" data-iconpos="text" data-rel="dialog" data-transition="fade">Register</a> 
+	<!-- <a style=" margin:5px 0 10px 0;" data-role="button" data-transition="slide" data-theme="a" href="register.html" data-iconpos="left">  Register  </a> -->
+   </div><!-- /header -->
+
+    <div data-role="content">
+
+        <div class="content-primary" data-theme="c">
+
+			<div data-role="controlgroup">
+                <ul data-role="listview" data-inset="true" data-theme="c" data-dividertheme="f">
+                   <!-- <li data-role="list-divider">Enterprise Productivity Tool</li>  -->
+                    <li><a href="http://jquerymobile.com/demos/1.1.1/">About</a></li> 
+				<!--    <li><a href="mobilepos.html">Mobile POS</a></li> -->
+                </ul>
+            </div>
+            
+			<!-- <label for="account" class="select"><strong>Enter Username and Password:</strong></label> -->
+			<!--
+			<label for="account" class="select"><strong>Choose account:</strong></label>
+		    <select name="account" id="account" data-native-menu="false">
+		        <option value="exuma1">Project1</option>
+		        <option value="exuma2">Project2</option>
+		        <option value="exuma3">Project3</option>
+		    </select> -->
+            <p></p>
+	        <input type="text" name="clerkid" id="clerkid" placeholder="User Name	" value=""/>
+	        <p></p>
+            <input type="password" name="password" id="password" placeholder="Password" value="" />
+            
+    	    <fieldset class="ui-grid-a">
+	            <div class="ui-block-a"><a href="home.html" data-icon="check" type="reset" data-role="button" data-theme="c">Login</a></div>
+	            <!-- <div class="ui-block-b"><a href="register.html" data-icon="check" type="submit" data-role="button" data-theme="c">Register</a></div> -->
+				<div class="ui-block-b"><a href="changeprofile.html" data-icon="check" type="submit" data-role="button" data-theme="c">Forget Username/Password</a></div>
+     	    </fieldset>
+			
+			
+
+        </div><!-- content-primary -->
+
+<!--    <div><!--/content-secondary-->
+<!--    </div><!--/content-secondary-->
+    </div><!-- /content -->
+
+    <div data-role="footer" class="footer-docs" data-theme="a">
+        <p><center>&copy; 2012 Dobango Inc.</p>
+    </div> <!-- /Footer -->
+
+</div><!-- /Login page -->
+
+</body>
+</html>

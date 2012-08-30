@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html> 
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>Enterprise Productivity  Mobile: Prototype</title>
+
+    <link rel="apple-touch-icon-precomposed" href="images/dockmaster.png" />
+    <link rel="apple-touch-startup-image" href="images/dm_startup.png" />
+<!--	<link rel="apple-touch-startup-image" href="rvm_startup.png" />	RVMaster Start-up Logo -->
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css" />
+    <link rel="stylesheet" href="css/dm.css" />
+
+    <script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
+   	<! -- <script type="text/javascript" src="js/exmobile.initCustomerDB.js"></script>  -->
+</head> 
+
+<body onload="initCustomerDB()">
+
+<!-- Login Page -->
+
+<div data-role="page" id="dm-login">
+
+    <div data-role="header" data-theme="a"  data-add-back-btn="true"	>
+	<h1>Enterprise Productivity Tool</h1>
+    </div><!-- /header -->
+
+    <div data-role="content">
+
+        <div class="content-primary" data-theme="c">
+
+			<form action="/FormActions/register.ashx" method="get">
+            
+				<fieldset>
+                
+					<!-- <asp:Literal runat="server" ID="litMessage"></asp:Literal> -->
+					
+					<label for="username">Username:</label>
+					<input type="text" name="username" id="username" value=""  />
+
+					<label for="email">Email:</label>
+					<input type="email" name="email" id="email" value=""  />
+
+					<label for="password">Password:</label>
+					<input type="password" name="password" id="password" value="" />
+
+					<label for="firstName">First name:</label>
+					<input type="text" name="firstName" id="firstName" value=""  />
+
+					<label for="firstName">Last name:</label>
+					<input type="text" name="lastName" id="lastName" value=""  />
+
+					<a href="" data-role="button" data-inline="true" data-theme="c">Register</a>
+
+					<p>Already have an account? <a  href="index.html" >Login</a></p> 
+
+				</fieldset>
+            
+        </form>
+			
+			
+
+        </div><!-- content-primary -->
+
+<!--    <div><!--/content-secondary-->
+<!--    </div><!--/content-secondary-->
+    </div><!-- /content -->
+
+    <div data-role="footer" class="footer-docs" data-theme="a">
+        <p><center>&copy; 2012 Dobango Inc.</p>
+    </div> <!-- /Footer -->
+
+</div><!-- /Login page -->
+
+</body>
+</html>
